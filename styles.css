@@ -1,0 +1,105 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url(playabali3.jpg) fixed;
+    min-height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center center;
+}
+
+
+
+/* Estilo del cuadro de contraseña */
+#password-container {
+    background-color: pink; /* Color de fondo rosa */
+    background-image: url('rosa.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al contenedor */
+    border: 4px solid black; /* Bordes negros */
+    color: rgb(235, 15, 150); /* Color del texto*/
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto; /* Centrar el cuadro */
+    text-align: center ; /* Centrar el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+/* Estilo del botón */
+button {
+    background-color: black; /* Fondo del botón negro */
+    color: limegreen; /* Texto del botón verde lima */
+    border: 2px solid limegreen; /* Borde verde lima */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Cambiar color al pasar el ratón sobre el botón */
+button:hover {
+    background-color: rgb(96, 226, 9);
+    color: rgb(212, 17, 131);
+}
+
+/* Estilo del input */
+input[type="password"] {
+    border: 2px solid rgb(131, 240, 6); /* Bordes */
+    padding: 10px;
+    margin-top: 10px;
+    width: calc(100% - 24px); /* ajustar el input al contenedor */
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(218, 14, 207); /* Texto */
+    background-color: transparent;
+}
+
+/* Estilo del menu horizontal */
+nav{
+    border: 4px solid rgb(17, 1, 17);
+	max-width: 900px;
+	margin: auto;
+	background-color: rgb(241, 13, 192);
+	font-size: 20px;
+	margin-top: 20px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color:transparent;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
